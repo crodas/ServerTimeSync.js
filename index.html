@@ -1,0 +1,21 @@
+<html> 
+
+<head> 
+<title> favorites / bookmark title goes here </title>
+<script>
+var timeURL = "http://37.153.159.15:9999";
+var timeSynced = false;
+var retry = setInterval(function() {
+    if (timeSynced) {
+        clearInterval(retry);
+        alert("Time is sinced, there is " + (Date.now() - LocalDate.now()) + " ms of difference");
+    }
+}, 100);
+</script>
+</head>
+
+<body>
+<script src="sync.js"></script>
+</body>
+
+</html>
