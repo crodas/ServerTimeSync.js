@@ -45,7 +45,7 @@
         if (localStorage.time_offset) persist = JSON.parse(localStorage.time_offset);
     } catch (e) {}
 
-    if (persist[URL][0] > LocalDate.now()) {
+    if (persist[URL] && perpersist[URL][0] > LocalDate.now()) {
         offset = persist[URL][1]
         override();
         return;
