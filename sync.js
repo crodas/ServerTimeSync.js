@@ -104,7 +104,7 @@
         request.onload = function() {
             if (!valid) return pingServer();
             var data = JSON.parse(this.response)
-            samples.push(LocalDate.now() - (data.time + ((res-req)/1)))
+            samples.push((data.time + ((res-req)/1)) - res)
             if (samples.length < 10) pingServer();
             else process();
         };
