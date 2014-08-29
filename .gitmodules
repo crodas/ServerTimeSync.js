@@ -1,6 +1,6 @@
 [submodule "serverd/deps/http-parser"]
 	path = serverd/deps/http-parser
-	url = git@github.com:joyent/http-parser.git
+	url = git://github.com/joyent/http-parser.git
 [submodule "serverd/deps/uv"]
 	path = serverd/deps/uv
-	url = git@github.com:joyent/libuv.git
+	url = git://github.com/joyent/libuv.git
